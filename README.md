@@ -27,3 +27,21 @@ Build an Apptainer image from Docker Hub:
 ```bash
 apptainer build cat12-segment-smooth.sif docker://rlbachen/cat12-segment-smooth
 ```
+
+## Run
+
+The entrypoint takes a single uncompressed `.nii` path. CAT12 writes its outputs next to the input, so mount the directory that holds it.
+
+Docker:
+
+```bash
+docker run --rm -v /path/to/data:/data rlbachen/cat12-segment-smooth /data/sub-01_T1w.nii
+```
+
+Apptainer:
+
+```bash
+apptainer run --bind /path/to/data:/data cat12-segment-smooth.sif /data/sub-01_T1w.nii
+```
+
+The smoothed grey matter map is written to `mri/s6mwp1<name>.nii` alongside the CAT12 segmentation outputs.
