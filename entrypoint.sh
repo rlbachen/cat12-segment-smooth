@@ -2,6 +2,11 @@
 set -e
 
 INPUT_IMAGE="$1"
+
+if [ -z "$INPUT_IMAGE" ] || [[ "$INPUT_IMAGE" != *.nii ]] || [ ! -f "$INPUT_IMAGE" ]; then
+  echo "Usage: provide an existing uncompressed .nii file, e.g. /data/sub-01_T1w.nii" >&2
+  exit 1
+fi
 BASENAME=$(basename "$INPUT_IMAGE" .nii)
 FULL_INPUT_PATH="$INPUT_IMAGE"
 
