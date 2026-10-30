@@ -3,6 +3,8 @@
 [![Docker Pulls](https://badgen.net/docker/pulls/rlbachen/cat12-segment-smooth?icon=docker&label=pulls)](https://hub.docker.com/r/rlbachen/cat12-segment-smooth)
 [![Docker Image Size](https://badgen.net/docker/size/rlbachen/cat12-segment-smooth/latest/amd64?icon=docker&label=image%20size)](https://hub.docker.com/r/rlbachen/cat12-segment-smooth/tags)
 [![Docker Tag](https://badgen.net/badge/docker%20tag/latest/blue?icon=docker)](https://hub.docker.com/r/rlbachen/cat12-segment-smooth/tags)
+[![DOI](https://zenodo.org/badge/1140774976.svg)](https://doi.org/10.5281/zenodo.23789383)
+
 
 The image is published on Docker Hub:  
 https://hub.docker.com/r/rlbachen/cat12-segment-smooth
